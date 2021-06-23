@@ -13,6 +13,7 @@ void Salesman::set(QString newName, double newMoney, double newPercentage)
     id = Person::showPerson();
     name = newName;
     salary = newMoney * newPercentage / 100;
+    all += salary;
 }
 
 void Salesman::show() {
@@ -40,7 +41,7 @@ void Salesman::write() {
     for(i = 1; i <= 20 - (QString::number(id)).length(); i++) {
         expression += " ";
     }
-    expression += "Manager";
+    expression += "Salesman";
     for(i = 1; i <= 20 - 7; i++) {
         expression += " ";
     }

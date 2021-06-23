@@ -58,7 +58,7 @@ void Technician::write() {
 void Technician::out() {
     expression += QString::number(id);
     expression += " ";
-    expression += "Manager";
+    expression += "Technician";
     expression += " ";
     expression += name;
     expression += " ";

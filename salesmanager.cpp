@@ -27,6 +27,7 @@ void Salesmanager::set(QString newName, double newMoney, double newPercentage, d
     id = Person::showPerson();
     name = newName;
     salary = newMoney * newPercentage / 100 + newSalary;
+    all += salary;
 }
 
 void Salesmanager::show() const {
@@ -72,7 +73,7 @@ void Salesmanager::write() {
 void Salesmanager::out() {
     expression += QString::number(id);
     expression += " ";
-    expression += "Manager";
+    expression += "Salesmanager";
     expression += " ";
     expression += name;
     expression += " ";

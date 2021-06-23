@@ -96,6 +96,12 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>textEdit_name</tabstop>
+  <tabstop>textEdit_hours</tabstop>
+  <tabstop>textEdit_hoursalary</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

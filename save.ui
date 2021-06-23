@@ -66,6 +66,12 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_name</tabstop>
+  <tabstop>pushButton_id</tabstop>
+  <tabstop>pushButton_grade</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

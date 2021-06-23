@@ -24,11 +24,8 @@ search::~search()
 void search::on_pushButton_clicked()
 {
     QString search = ui->textEdit->toPlainText();
-    char temp[1000];
-    QByteArray ba = search.toLocal8Bit();
-    memcpy(temp, ba.data(), ba.size() + 1);
     int i, j = 0, many = count_manager + count_technician + count_salesmanager + count_salesman;
-    combine comb[many], comb_temp;
+    combine comb[many + 3], comb_temp;
     //try {
     for(i = 1; i <= count_manager; i++) {
         if(!manager[i].getdel()) {
@@ -117,6 +114,9 @@ void search::on_pushButton_clicked()
         ui->label_name->setText(expression_name);
         ui->label_salary->setText(expression_salary);
     }
+    expression_id.clear();
+    expression_grade.clear();
+    expression_name.clear();
+    expression_salary.clear();
     ui->textEdit->clear();
 }
-

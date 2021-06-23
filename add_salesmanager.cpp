@@ -3,6 +3,7 @@
 
 extern int count_salesmanager;
 extern Salesmanager salesmanager[1000];
+extern bool isread;
 
 add_salesmanager::add_salesmanager(QWidget *parent) :
     QWidget(parent),
@@ -158,6 +159,7 @@ void add_salesmanager::on_pushButton_clicked()
         ui->textEdit_money->clear();
         ui->textEdit_percentage->clear();
         ui->textEdit_salary->clear();
+        isread = true;
     }
 }
 

@@ -96,6 +96,12 @@
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>textEdit_name</tabstop>
+  <tabstop>textEdit_money</tabstop>
+  <tabstop>textEdit_percentage</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

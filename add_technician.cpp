@@ -3,6 +3,7 @@
 
 extern int count_technician;
 extern Technician technician[1000];
+extern bool isread;
 
 add_technician::add_technician(QWidget *parent) :
     QWidget(parent),
@@ -115,6 +116,7 @@ void add_technician::on_pushButton_clicked()
         ui->textEdit_name->clear();
         ui->textEdit_hours->clear();
         ui->textEdit_hoursalary->clear();
+        isread = true;
     }
 }
 

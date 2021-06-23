@@ -3,6 +3,7 @@
 
 extern int count_manager;
 extern Manager manager[1000];
+extern bool isread;
 
 add_manager::add_manager(QWidget *parent) :
     QWidget(parent),
@@ -83,6 +84,7 @@ void add_manager::on_pushButton_clicked()
         //+ manager[count_manager];
         ui->textEdit_name->clear();
         ui->textEdit_salary->clear();//清空文本框
+        isread = true;
     }
     else {
         ui->textEdit_salary->clear();

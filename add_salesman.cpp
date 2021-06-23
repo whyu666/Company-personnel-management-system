@@ -3,6 +3,7 @@
 
 extern int count_salesman;
 extern Salesman salesman[1000];
+extern bool isread;
 
 add_salesman::add_salesman(QWidget *parent) :
     QWidget(parent),
@@ -115,6 +116,7 @@ void add_salesman::on_pushButton_clicked()
         ui->textEdit_name->clear();
         ui->textEdit_money->clear();
         ui->textEdit_percentage->clear();
+        isread = true;
     }
 }
 
